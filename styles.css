@@ -183,4 +183,80 @@ p {
 
 p {
     text-align: center;
+} 
+
+
+
+/* ============================================================
+   AJUSTES GENERALES PARA RESPONSIVIDAD Y CELULARES
+   ============================================================ */
+
+/* Previene que los bordes y rellenos ensanchen la pantalla */
+* {
+  box-sizing: border-box;
 }
+
+/* Evita que aparezca la barra de desplazamiento horizontal */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hace que todas las imágenes e ilustraciones se adapten al ancho del celular */
+img, iframe, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ajusta los contenedores principales a pantallas pequeñas */
+.container, .contenedor, main, section, header, footer {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ============================================================
+   REGLAS ESPECÍFICAS PARA CELULARES Y TABLETAS (Pantallas < 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* Ajuste de títulos para que no se corten */
+  h1 {
+    font-size: 1.8rem !important;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 1.4rem !important;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 1.2rem !important;
+  }
+
+  /* Convierte menús, tarjetas y columnas de horizontal a vertical */
+  header, nav, ul,
+  .row, .grid, .flex-container,
+  .mision-vision, .cards {
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+
+  /* Ajusta elementos individuales a todo el ancho */
+  .col, .column, .card, .tarjeta {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  /* Espaciado interno cómodo para lectura en teléfonos */
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+}  
