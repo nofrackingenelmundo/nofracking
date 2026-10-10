@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏔️Importancia de los Páramos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpeg" href="icono.jpg">
+</head>
+<body>
+
+    <!-- ENCABEZADO Y MENÚ DE NAVEGACIÓN -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="sub-title">PROYECTO DE BIOLOGÍA</span>
+                <h1>💧¡NO AL FRACKING!</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html"class="nav-link active" target="_blank">🏠Inicio</a></li>
+                    
+                    <!-- Menú Desplegable -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">🚫Afectaciones y Páramos ▾</a>
+                        <ul class="dropdown-menu">
+
+
+                            <li><a href="fracking.html" target="_blank">🌍¿Qué es el Fracking?</a></li>
+                            <li><a href="impactos.html" target="_blank">⚠️Impactos Ambientales</a></li>
+                            <li><a href="paramos.html" target="_blank">🏔️Importancia de los Páramos</a></li>
+                            <li><a href="integrantes.html" target="_blank">👤Integrantes</a></li>
+                        </ul>
+                    </li>
+            </nav>
+        </div>
+    </header>
+
+
+   <!-- CONTENEDOR DEL JUEGO DEL PÁRAMO -->
+<div id="paramo-game" style="border: 2px solid #2d6a4f; border-radius: 10px; padding: 20px; max-width: 600px; margin: 20px auto; text-align: center; font-family: sans-serif; background-color: #f9fbf9;">
+    
+    <!-- MARCADOR Y ESTADO DE PROTECCIÓN -->
+    <div style="display: flex; justify-content: space-between; background-color: #e8f5e9; padding: 10px 15px; border-radius: 6px; font-weight: bold; color: #1b4332;">
+        <span>💧 Agua protegida: <span id="score">0</span> L</span>
+        <span>🌿 Páramo: <span id="status">En protección</span></span>
+    </div>
+
+    <!-- ESTADO DEL FRAILEJÓN -->
+    <div id="frailejon" style="font-size: 50px; margin: 15px 0;">🌱</div>
+
+    <!-- CAJA DE PREGUNTAS -->
+    <div id="game-box">
+        <p id="question" style="font-size: 1.1rem; font-weight: bold; color: #1b4332; margin-bottom: 15px;">
+            Cargando pregunta...
+        </p>
+        
+        <div id="options" style="display: flex; flex-direction: column; gap: 10px;">
+            <!-- Las opciones se insertan mediante JavaScript -->
+        </div>
+
+        <p id="feedback" style="margin-top: 15px; font-weight: bold;"></p>
+        
+        <button id="btn-next" style="display: none; margin-top: 15px; padding: 10px 20px; background-color: #1b4332; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+            Siguiente Pregunta ➔
+        </button>
+    </div>
+
+    <!-- PANTALLA DE RESULTADOS FINALES -->
+    <div id="final-screen" style="display: none;">
+        <h3 style="color: #1b4332;">🎉 ¡Felicidades, Defensor del Agua!</h3>
+        <p id="final-message"></p>
+        <p style="background-color: #2d6a4f; color: white; padding: 10px; border-radius: 5px; font-weight: bold;">
+            "Páramos sin fracking: futuro con agua"
+        </p>
+        <button id="btn-restart" style="margin-top: 10px; padding: 10px 20px; background-color: #1b4332; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+            🔄 Jugar de nuevo
+        </button>
+    </div>
+
+    <!-- ENLACE AL ARCHIVO JAVASCRIPT SEPARADO -->
+    <script src="juego.js"></script>
+</div>
+
+    
+        <!-- 4. ESLOGAN AL FINAL -->
+        <section class="slogan-container">
+            <p class="slogan">"Los páramos colombianos son el corazón hídrico de la alta montaña que transforma la niebla en la vida de todo nuestro país"</p>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2026 Proyecto de Biología | Defensa del Agua y los Páramos Libres de Fracking</p>
+    </footer>
+
+    <script src="juego.js"></script>
+
+</body>
+</html>
